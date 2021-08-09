@@ -12,8 +12,8 @@
 
 
 .navbar{
-    position: sticky;
-    z-index: 3;
+    position: fixed;
+    z-index: 999;
     display: flex;
     top: 0;
     left: 0;
@@ -93,7 +93,6 @@ header{
 
 .header-content{
     margin-bottom: 195px;
-    position: fixed;
     color: black;
 }
 
@@ -427,7 +426,7 @@ header{
     }    
 
     .header-content{
-        margin-bottom: 360px;
+        margin-bottom: 36 0px;
     }
 
     .welcome{
