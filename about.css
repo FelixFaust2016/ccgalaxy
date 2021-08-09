@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.navbar{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    height: 80px;
+    background: rgb(31, 30, 30);
+    z-index: 1;
+}
+
+.navbar h1{
+    color: whitesmoke;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 5px;
+}
+
+.nav-links li a{
+    color: whitesmoke;
+}
+
+.nav-links li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fc036b;
+    border-radius: 40px;
+    transition: width 0.9s ease 0s, left 0.9s ease 0s;
+    width: 0;
+}
+
+.nav-links li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    border-radius: 40px;
+}
+
+.logo{
+    background: url(img/Horizontal\ Mix\ -\ cc\ galaxy.png);
+    width: 130px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    margin-top: -7px;
+}
+
+.active{
+    color: #fc036b;
+    /* font-weight: bold; */
+}
+
+.menu-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* <!-- ================================= TOP BACKGROUND ========================= --> */
+.top-backgd{
+    width: 100%;
+    height: 45vh;
+    max-height: 45 m vh;
+    margin-top: 80px;
+}
+
+.top-backgd-image{
+    width: 100%;
+    height: 100%;
+    background-image: url(img2/topbackgb.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(60%);
+}
+
+.top-backgd .texts{
+    position: absolute;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    top: 25%;
+    left: 43%;
+    font-size: 40px;
+}
+
+/* <!-- ============================== ABOUT US =============================== --> */
+.about{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    /* background-color: #f1f1f1; */
+}
+
+.about-section{
+    background: url(img2/man.jpg) no-repeat left;
+    background-size: 70%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 110px;
+    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+}
+
+.abt{
+    display: flex;
+    justify-content: space-between;
+}
+
+.abt h1{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.profile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url(img/aboutus.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.line{
+    width: 160px;
+    height: 4px;
+    border-radius: 20px;
+    background: #fc036b;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 23px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+    text-align: justify;
+}
+
+
+.skills span{
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* ============================== FOOTER ================================== */
+.footer{
+    width: 100%;
+    height: fit-content;
+    background: rgb(31, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+.brand-icon{
+    width: 240px;
+    height: 100%;
+    padding: 40px;
+}
+
+.brand-icon h3{
+    color: whitesmoke;
+}
+
+.stuff{
+    margin-left: -10px;
+}
+
+.social{
+    padding-top: 10px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.services{
+    width: 240px;
+    height: 100%;
+    padding: 40px;
+}
+
+.services h3{
+    color: whitesmoke;
+}
+
+.services ul li a{
+    color: whitesmoke;
+}
+
+.address{
+    width: 260px;
+    height: 100%;
+    padding: 40px;
+}
+
+.address ul li{
+    color: whitesmoke;
+}
+
+.address h3{
+    color: whitesmoke;
+}
+
+.copyright{
+    width: 100%;
+    background: rgb(31, 30, 30);
+}
+
+.copyright p{
+    text-align: center;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+
+
+@media (max-width: 1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media (max-width: 1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .about-section{
+        padding: 0;
+    }
+
+    .inner-container{
+        padding: 60px;
+    }
+}
+
+@media  (max-width: 921px){
+    .logo{
+        font-size: 25px;
+    }
+
+    .nav-links{
+        font-size: 13px;
+    }
+
+    ul{
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+    .social{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .services ul li a{
+        font-size: 13px;
+    }
+
+    .address ul li{
+        font-size: 13px;
+    }
+
+    .copyright p{
+        font-size: 13px;
+    }
+
+
+}
+
+@media  (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: black;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    .footer-layout{
+        width: 100%;
+        padding: 10px;
+    }
+
+
+}
+
+@media (max-width: 715px){
+    .logo{
+        font-size: 19px;
+    }
+
+    .menu-icon{
+        top: 25px;
+    }
+}
+
+@media (max-width: 720px){
+    .skills span{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 735px){
+    .the-best{
+        height: 90vh;
+    }
+}
+
+@media  (max-width: 670px){
+    .skills span{
+        font-size: 12px;
+    }
+}
+
+@media  (max-width: 640px){
+    .top-backgd .texts{
+        left: 10%;
+    }
+    .skills span{
+        font-size: 11px;
+    }
+}
+
+@media  (max-width: 620px){
+    .skills span{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 510px){
+    .skills span{
+        width: 100%;
+    }
+}
+
+@media (max-width: 515px) {
+    .container{
+        overflow: hidden;
+    }
+
+    .brand-icon{
+        width: 50%;
+    }
+
+    .services{
+        width: 50%;
+    }
+
+    .address{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .header-content h2{
+        font-size: 30px;
+    }
+
+    .header-content p{
+        font-size: 13px;
+    }
+
+    .the-best{
+        height: 140vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .about{
+        width: fit-content;
+    }
+
+    .inner-container{
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }  
+
+    .abt h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-height: 414px){
+    .top-backgd .texts{
+        font-size: 45px;
+        position: absolute;
+        justify-content: left;
+        left: 10%;
+        top: 40%;
+    }
+
+    .top-backgd{
+        padding-bottom: 30px;
+    }
+
+    .about{
+        height: 100vmax;
+    }
+}
+
+
+@media (max-width: 336px){
+    .about{
+        height: fit-content;
+    }
+
+    .about h1{
+        font-size: 29px;
+    }
+
+    .line{
+        width: 100px;
+    }
+
+    .about p{
+        font-size: 11.5px;
+    }
+}
+
+

@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.navbar{
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    height: 80px;
+    background: rgb(31, 30, 30);
+}
+
+.navbar h1{
+    color: whitesmoke;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links li{
+    margin: 0 30px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 5px;
+}
+
+.nav-links li a{
+    color: whitesmoke;
+}
+
+.nav-links li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    background: #fc036b;
+    border-radius: 40px;
+    transition: width 0.9s ease 0s, left 0.9s ease 0s;
+    width: 0;
+}
+
+.nav-links li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    border-radius: 40px;
+}
+
+.logo{
+    background: url(img/Horizontal\ Mix\ -\ cc\ galaxy.png);
+    width: 130px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    margin-top: -7px;
+}
+
+.active{
+    color: #fc036b;
+    /* font-weight: bold; */
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(img/bannerccgalaxy.jpg);
+    background-position: top;
+    background-size: cover;
+    filter: brightness(110%);
+    display: flex;
+    align-items: flex-end;
+    /* justify-content: center; */
+    padding-left: 100px;
+}
+
+.header-content{
+    margin-bottom: 195px;
+    position: fixed;
+    color: black;
+}
+
+.tin1{
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.tin{
+    font-size: 68px;
+    margin-top: -16px;
+}
+
+.header-content p{
+    font-weight: bold;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    border-radius: 5px;
+    margin-bottom: 10px !important;
+}
+
+
+.menu-icon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* =========================== WELCOME ============================= */
+.welcome{
+    width: 100%;
+    height: auto;
+}
+
+.welcome-text{
+    width: 100%;
+    height: 90px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.welcome-text h1{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+/* .welcome-line{
+    width: 120px;
+    height: 4px;
+    background: #fc036b;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+} */
+
+.welcome-layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.area1{
+    width: 40%;
+    height: 600px;
+}
+
+.area2{
+    width: 40%;
+    height: 600px;
+}
+
+.area1-img{
+    background: url(img/welcome1image.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 7px;
+}
+
+.area1-text{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.area1-text h2{
+    padding-bottom: 20px;
+}
+
+
+.area2-img{
+    background: url(img/welcome2image.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    border-radius: 7px;
+}
+
+/* =================================== EXPLORE ================================== */
+.explore{
+    width: 100%;
+    height: auto;
+}
+
+.explore-img{
+    background: url(img/pic3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-bottom: 12%;
+}
+
+.explore-text{
+    width: 95%;
+    height: 60%;
+    /* background: violet; */
+    padding: 10px;
+}
+
+.explore-text h1{
+    font-size: 40px;
+    color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+.linee{
+    width: 200px;
+    height: 4px;
+    background: #fc036b;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.explore-text p{
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+.view-gallery{
+    width: 110px;
+    height: 35px;
+    background: #fc036b;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    color: whitesmoke;
+    display: flex;
+    padding-top: 5px;
+    padding-left: 14px;
+    display: flex;
+}
+
+.view-gallery p{
+    margin-top: 2px;
+}
+
+
+/* =================================== THE BEST =============================== */
+.the-best{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.best-layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+}
+
+.best-text{
+    width: 40%;
+    height: 70%;
+    /* background: palegreen; */
+    padding: 30px;
+}
+
+.best-text h1{
+    padding-bottom: 20px;
+}
+
+.best-text p{
+    padding-top: 15px;
+}
+
+.image-gallery{
+    width: 50%;
+    height: 300px;
+    background: url(img/wearethebest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ============================== FOOTER ================================== */
+.footer{
+    width: 100%;
+    height: fit-content;
+    background: rgb(31, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-layout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.brand-icon{
+    width: 240px;
+    height: 100%;
+    padding: 40px;
+}
+
+.brand-icon h3{
+    color: whitesmoke;
+}
+
+.stuff{
+    margin-left: -10px;
+}
+
+.social{
+    padding-top: 10px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.services{
+    width: 240px;
+    height: 100%;
+    padding: 40px;
+}
+
+.services h3{
+    color: whitesmoke;
+}
+
+.services ul li a{
+    color: whitesmoke;
+}
+
+.address{
+    width: 260px;
+    height: 100%;
+    padding: 40px;
+}
+
+.address ul li{
+    color: whitesmoke;
+}
+
+.address h3{
+    color: whitesmoke;
+}
+
+.copyright{
+    width: 100%;
+    background: rgb(31, 30, 30);
+}
+
+.copyright p{
+    text-align: center;
+    padding-bottom: 20px;
+    color: whitesmoke;
+}
+
+
+/* @media  (max-width: 1024px){
+    .welcome{
+        height: 90vh;
+    }
+} */
+
+@media  (max-width: 921px){
+    .logo{
+        font-size: 25px;
+    }
+
+    .nav-links{
+        font-size: 13px;
+    }
+
+    ul{
+        list-style: none;
+        margin-top: 10px;
+    }
+
+    header{
+        background-position: center;
+        background-size: cover;
+        height: 100vmax;
+    }    
+
+    .header-content{
+        margin-bottom: 400px;
+    }
+
+    .welcome{
+        width: 100%;
+        height: 130vh;
+    }
+
+    .welcome p{
+        font-size: 15px;
+    }
+
+    .explore-text p{
+        font-size: 14px;
+    }
+
+    .the-best{
+        width: 100%;
+        height: 110vh;
+    }
+
+    .best-text h1{
+        font-size: 30px;
+    }
+
+    .best-text p{
+        font-size: 15px;
+    }
+    
+    .footer{
+        width: 100%;
+    }
+
+    .social{
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .services ul li a{
+        font-size: 13px;
+    }
+
+    .address ul li{
+        font-size: 13px;
+    }
+
+    .copyright p{
+        font-size: 13px;
+    }
+}
+
+@media (max-height: 550px){
+    header{
+        height: 90vmax;
+    }
+    .welcome{
+        height: 90vmax;
+    }
+
+    .the-best{
+        height: 60vmax;  
+    }
+}
+
+@media  (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+
+    .logo{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: black;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    header{
+        background-position: center;
+        background-size: cover;
+    }    
+
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 20%;
+    }
+
+    .nav-links li{
+        margin: 30px auto;
+    }
+
+    .welcome{
+        height: 130vh;
+    }
+
+    .welcome p{
+        font-size: 14px;
+    }
+
+    .explore{
+        height: 70vh;
+    }
+
+    .explore-img{
+        height: 70vh;
+    }
+
+    .explore-text p{
+        font-size: 13px;
+    }
+
+    .the-best{
+        height: 70vh;
+    }
+
+    .best-layout{
+        height: 100%;
+    }
+
+    .image-gallery{
+        height: 300px;
+    }
+
+    .the-best h1{
+        font-size: 24px;
+    }
+
+    .the-best p{
+        font-size: 13.5px;
+    }
+
+    .footer-layout{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 715px){
+    .logo{
+        font-size: 19px;
+    }
+
+    .menu-icon{
+        top: 25px;
+    }
+
+    .welcome p{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 735px){
+    .the-best{
+        height: 90vh;
+    }
+}
+
+@media  (max-width: 615px){
+    .welcome{
+        height: 200vh;
+    }
+
+    .area1{
+        width: 90%;
+    }
+
+    .area2{
+        width: 90%;
+    }
+
+    .area1-img{
+        height: 230px;
+    }
+
+    .area2-img{
+        height: 230px;
+    }
+
+    .the-best{
+        height: 125vh;
+    }
+
+    .best-text{
+        width: 90%;
+        height: 250px;
+    }
+
+    .image-gallery{
+        width: 90%;
+        height: 280px;
+    }
+
+}
+
+@media (max-width: 515px) {
+    .container{
+        overflow: hidden;
+    }
+
+    .welcome{
+        height: 210vh;
+    }
+
+    .area1{
+        width: 90%;
+    }
+
+    .area2{
+        width: 90%;
+    }
+
+    .the-best{
+        height: 123vh;
+    }
+
+    .best-text{
+        width: 90%;
+        height: 280px;
+    }
+
+    .image-gallery{
+        width: 90%;
+        height: 300px;
+    }
+
+    .brand-icon{
+        width: 50%;
+    }
+
+    .services{
+        width: 50%;
+    }
+
+    .address{
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .header-content h2{
+        font-size: 30px;
+    }
+
+    .header-content p{
+        font-size: 13px;
+    }
+
+    .the-best{
+        height: 140vh;
+    }
+}
+
+@media (max-height: 414px){        
+    .welcome{
+        height: 110vmax;
+    }
+
+    .explore{
+        height: 60vmax; 
+    }
+
+    .explore-img{
+        height: 100%;
+    }
+
+    .the-best{
+        height: 70vmax;
+    }
+}
+
+@media (max-width: 411px) {
+    .welcome{
+        height: 210vh;
+    }
+
+    .explore{
+        height: 70vh;
+    }
+
+    .explore-img{
+        height: 70vh;
+    }
+
+    .the-best{
+        height: 120vh;
+    }
+}
+
+@media (max-height: 400px){
+    .welcome{
+        height: 130vmax;
+    }
+
+    .the-best{
+        height: 80vmax;
+    }
+
+}
+
+@media (max-width: 350px){
+    .header-content h2{
+        font-size: 25px;
+    }
+
+    .header-content p{
+        font-size: 14px;
+    }
+    .explore{
+        height: 100vh;
+    }
+
+    .explore-img{
+        height: 100%;
+    }
+
+    .the-best{
+        height: 150vh;
+    }
+
+    .best-layout{
+        height: 100%;
+    }
+
+    .best-text .linee{
+        width: 120px;
+    }
+}
+
+

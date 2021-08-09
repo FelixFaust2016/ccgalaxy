@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery.paintify</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ============================== NAV BAR ============================= -->
+        <nav class="navbar">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <i class='bx bx-menu menu-icon' ></i>
+        </nav>
+ 
+        <!-- ================================ WELCOME ========================== -->
+
+        <!-- ============================== FIRST LAYOUT ======================= -->
+        <div class="first-layout">
+            <div class="first-topic">
+                <h2>Exterior Painting</h2>
+                <p>Here are some exterior painting designs.</p>
+                <div class="line"></div>
+            </div>
+        
+            <!-- ============================= GALLERY ============================ -->
+            <div class="full-img" id="fullImgBox">
+                <img src="img2/house8.jpg" id="fullImg">
+                <span onclick="closeFullImg()"><i class='bx bx-x'></i></span>
+            </div>
+            <div class="image-gallery">
+                <img src="img/ex1.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex2.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex3.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex4.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex5.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex6.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex7.jpg" onclick="openFullImg(this.src)">
+                <img src="img/ex8.jpg" onclick="openFullImg(this.src)">
+            </div>
+        </div>
+
+        <!-- =========================== SECOND LAYOUT ================================ -->
+        <div class="first-layout">
+            <div class="first-topic">
+                <h2>Interior Painting</h2>
+                <p>Here are some interior painting designs.</p>
+                <div class="line"></div>
+            </div>
+        
+            <!-- ============================= GALLERY ============================ -->
+            <div class="full-img" id="fullImgBox">
+                <img src="img2/house8.jpg" id="fullImg">
+                <span onclick="closeFullImg()"><i class='bx bx-x'></i></span>
+            </div>
+            <div class="image-gallery">
+                <img src="img/int1.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house2.jpg" onclick="openFullImg(this.src)">
+                <img src="img/int2.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house4.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house5.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house6.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house7.jpg" onclick="openFullImg(this.src)">
+                <img src="img2/house8.jpg" onclick="openFullImg(this.src)">
+            </div>
+        </div>
+
+        <!-- ================================== THIRD LAYOUT ================================= -->
+        <div class="first-layout">
+            <div class="first-topic">
+                <h2>P.O.P Works</h2>
+                <p>Here are some P.O.P works.</p>
+                <div class="line"></div>
+            </div>
+        
+            <!-- ============================= GALLERY ============================ -->
+            <div class="full-img" id="fullImgBox">
+                <img src="img2/house8.jpg" id="fullImg">
+                <span onclick="closeFullImg()"><i class='bx bx-x'></i></span>
+            </div>
+            <div class="image-gallery">
+                <img src="img/pop1.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop2.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop3.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop4.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop5.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop6.jpg" onclick="openFullImg(this.src)">
+                <img src="img/pop7.jpg" onclick="openFullImg(this.src)">
+            </div>
+            
+        </div>
+
+
+                <!-- ====================================== FOOTER ============================== -->
+                <div class="footer">
+                    <div class="footer-layout">
+                        <div class="brand-icon">
+                            <h3>Paintify</h3>
+                            <div class="stuff">
+                                <a href="#" class="footer__social"><i class='bx bxl-facebook social'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-instagram social'></i></a>
+                                <a href="#" class="footer__social"><i class='bx bxl-twitter social'></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="services">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#" class="footer__link">About us</a></li>
+                                <li><a href="#" class="footer__link">Contact us</a></li>
+                                <li><a href="#" class="footer__link">Privacy policy</a></li>
+                                <li><a href="#" class="footer__link">Terms of services</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="address">
+                            <h3>Address</h3>
+                            <ul>
+                                <li>Awka, Nigeria</li>
+                                <li>12 Isiagu Amikwo Road</li>
+                                <li>+234 803-768-8580</li>
+                                <li>+234 802-912-8184</li>
+                                <li>ccgalaxy@gmail.com</li>
+                            </ul>
+                        </div>    
+                    </div>
+                    <div class="copyright">
+                        <p class="footer__copy">&#169; 2021 CC Galaxy. All right reserved</p>
+                    </div>
+                </div>
+        
+
+    </div>
+
+
+
+<script src="gallery.js"></script>    
+</body>
+</html>
