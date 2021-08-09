@@ -13,7 +13,7 @@
 
 .navbar{
     position: sticky;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     top: 0;
     left: 0;
@@ -403,6 +403,10 @@ header{
 } */
 
 @media  (max-width: 921px){
+    header{
+        background-position: left;
+    }
+
     .logo{
         font-size: 25px;
     }
@@ -423,7 +427,7 @@ header{
     }    
 
     .header-content{
-        margin-bottom: 400px;
+        margin-bottom: 360px;
     }
 
     .welcome{
@@ -488,6 +492,10 @@ header{
 }
 
 @media  (max-width: 768px){
+    header{
+        background-position: left;
+    }
+
     .menu-icon{
         display: block;
     }
@@ -572,6 +580,10 @@ header{
 }
 
 @media (max-width: 715px){
+    header{
+        background-position: left;
+    }
+
     .logo{
         font-size: 19px;
     }
@@ -586,12 +598,24 @@ header{
 }
 
 @media (max-width: 735px){
+    header{
+        background-position: left;
+    }
+
     .the-best{
         height: 90vh;
     }
 }
 
 @media  (max-width: 615px){
+    header{
+        background-position: left;
+    }
+
+    .header-content{
+        margin-bottom: 390px;
+    }
+
     .welcome{
         height: 200vh;
     }
@@ -629,6 +653,10 @@ header{
 }
 
 @media (max-width: 515px) {
+    header{
+        background-position: left;
+    }
+
     .container{
         overflow: hidden;
     }
@@ -673,12 +701,21 @@ header{
 }
 
 @media (max-width: 450px) {
+    header{
+        background-position: left;
+    }
+
+    .header-content{
+        margin-bottom: 310px;
+    }
+
     .header-content h2{
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .header-content p{
         font-size: 13px;
+        font-weight: bold;
     }
 
     .the-best{
@@ -686,7 +723,7 @@ header{
     }
 }
 
-@media (max-height: 414px){        
+@media (max-height: 414px){    
     .welcome{
         height: 110vmax;
     }
